@@ -1,46 +1,75 @@
-# 🪄 Nuxt Starter Templates
+# Nuxt UI Minimal Starter
 
-Quickly get started with a minimal Nuxt starter template!
+Look at [Nuxt docs](https://nuxt.com/docs/getting-started/introduction) and [Nuxt UI docs](https://ui.nuxt.com) to learn more.
 
-## Quick start
+## Setup
 
-Head over to [nuxt.new](https://nuxt.new) to get started quickly.
+Make sure to install the dependencies:
 
-## Usage
+```bash
+# npm
+npm install
 
-You can use `nuxi` CLI to clone latest template to an empty directory:
+# pnpm
+pnpm install
 
-```sh-session
-$ npx nuxi init [-t,--template=<template>] [<dir>]
+# yarn
+yarn install
+
+# bun
+bun install
 ```
 
-**Example:** Clone `v3` to `my-app` directory:
+## Development Server
 
-```sh-session
-$ npx nuxi init -t v3 nuxt-app
+Start the development server on `http://localhost:3000`:
+
+```bash
+# npm
+npm run dev
+
+# pnpm
+pnpm run dev
+
+# yarn
+yarn dev
+
+# bun
+bun run dev
 ```
 
-## Templates
+## Production
 
-Name | Description | Local     | Online |
------|-------------|-----------|--------|
-[v4-compat](https://github.com/nuxt/starter/tree/v4-compat) | [Nuxt 3 with v4 compat](https://nuxt.com/docs/getting-started/upgrade#testing-nuxt-4) | `npx nuxi init nuxt-app -t v4-compat` | [Stackblitz](https://stackblitz.com/github/nuxt/starter/tree/v4-compat) / [CodeSandbox](https://codesandbox.io/p/github/nuxt/starter/v4-compat) |
-[v3](https://github.com/nuxt/starter/tree/v3) | [Nuxt 3](https://github.com/nuxt/nuxt) | `npx nuxi init nuxt-app` | [Stackblitz](https://stackblitz.com/github/nuxt/starter/tree/v3-stackblitz) / [CodeSandbox](https://codesandbox.io/p/github/nuxt/starter/v3-codesandbox) |
-[module](https://github.com/nuxt/starter/tree/module) | Nuxt Module with [Module Builder](https://github.com/nuxt/module-builder) | `npx nuxi init my-module -t module` | - |
-[module-devtools](https://github.com/nuxt/starter/tree/module-devtools) | Nuxt Module with [Nuxt DevTools](https://github.com/nuxt/devtools) integration | `npx nuxi init my-module -t module-devtools` | - |
-[layer](https://github.com/nuxt/starter/tree/layer) | [Nuxt Layer](https://nuxt.com/docs/guide/going-further/layers) Starter with Extends (experimental) | `npx nuxi init  -t layer` | - |
-[content](https://github.com/nuxt/starter/tree/content) | [Nuxt Content](https://content.nuxt.com) | `npx nuxi init content-app -t content` | [Stackblitz](https://stackblitz.com/github/nuxt/starter/tree/content) / [CodeSandbox](https://codesandbox.io/p/github/nuxt/starter/content) |
-[ui](https://github.com/nuxt/starter/tree/ui) | [Nuxt UI](https://ui.nuxt.com) | `npx nuxi init nuxt-ui-app -t ui` | [Stackblitz](https://stackblitz.com/github/nuxt/starter/tree/ui) / [CodeSandbox](https://codesandbox.io/p/github/nuxt/starter/ui) |
-[v2-bridge](https://github.com/nuxt/starter/tree/v2-bridge) | [Nuxt 2](https://github.com/nuxt/nuxt/tree/2.x-dev) + [Bridge](https://github.com/nuxt/bridge) | `npx nuxi init nuxt-bridge-app -t v2-bridge` | [Stackblitz](https://stackblitz.com/github/nuxt/starter/tree/v2-bridge) / [CodeSandbox](https://codesandbox.io/p/github/nuxt/starter/v2-bridge-codesandbox) |
-[v2](https://github.com/nuxt/starter/tree/v2) | [Nuxt 2](https://github.com/nuxt/nuxt/tree/2.x-dev) | `npx nuxi init nuxt2-app -t v2` | [Stackblitz](https://stackblitz.com/github/nuxt/starter/tree/v2-stackblitz) / [CodeSandbox](https://codesandbox.io/p/github/nuxt/starter/v2-codesandbox) |
+Build the application for production:
 
-## Contribution
+```bash
+# npm
+npm run build
 
-Each template is maintained in a branch (see [all branches](https://github.com/nuxt/starter/branches)).
-For improvements, please open a Pull Request to each individual branch.
+# pnpm
+pnpm run build
 
-**Note:** Please avoid commiting lock-files such as `yarn.lock` and `package-lock.json` to template branches!
+# yarn
+yarn build
 
-## License
+# bun
+bun run build
+```
 
-[MIT](./LICENSE) - Made with 💚
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm run preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
