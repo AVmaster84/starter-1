@@ -9,9 +9,9 @@ export default defineNuxtConfig({
     }
   },
   devtools: { enabled: true },
+  css: ["assets/css/app.css"],
   vite: {
     plugins: [tailwindcss(),]},
-  css: ["assets/css/app.css"],
   
 
   modules: [
