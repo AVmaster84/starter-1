@@ -7,17 +7,18 @@ definePageMeta({
 })
 </script> -->
 
-
-
 <template>
   <main>
-    <header>
-      <div>
-        <dark-mode-toggle />
-        <NavBar />
-        <!-- <Container /> -->
-      </div>
-    </header>
+    <!-- <NuxtLayout> -->
+
+      <!-- <header> -->
+        <div>
+          <!-- <dark-mode-toggle /> -->
+          <NavBar />
+          <!-- <Container /> -->
+        </div>
+      <!-- </header> -->
+    <!-- </NuxtLayout> -->
   </main>
 </template>
   

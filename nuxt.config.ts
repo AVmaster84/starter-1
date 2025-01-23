@@ -1,3 +1,4 @@
+import tailwindcss from "@tailwindcss/vite"
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
@@ -8,23 +9,23 @@ export default defineNuxtConfig({
     }
   },
   devtools: { enabled: true },
-  css: ["@assets/css/app.css"],
+  vite: {
+    plugins: [tailwindcss(),]},
+  css: ["assets/css/app.css"],
+  
 
   modules: [
     // "@nuxt/ui",
     "@nuxt/icon",
     "@nuxt/image",
-    "@nuxtjs/tailwindcss",
-    "@nuxtjs/color-mode"
+    // "@nuxtjs/tailwindcss",
+    // "@nuxtjs/color-mode"
   ],
 
-  tailwindcss: {
-
-  },
   pages: false,
-  colorMode: {
-    preference: 'light'
-  },
+  // colorMode: {
+  //   preference: 'light'
+  // },
   icon: {
     serverBundle: {
       collections: ['heroicons']
