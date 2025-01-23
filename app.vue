@@ -1,17 +1,23 @@
+<script setup lang="ts">
+const count = ref(1) // ref is auto-imported
+</script>
+<!-- <script setup lang="ts">
+definePageMeta({
+  layout: 'custom'
+})
+</script> -->
+
+
+
 <template>
-    <UBreadcrumb :links="links">
-      <template #icon="{ link }">
-        <UIcon :name="link.icon" />
-      </template>
-    </UBreadcrumb>
-  </template>
+  <main>
+    <header>
+      <div>
+        <dark-mode-toggle />
+        <NavBar />
+        <!-- <Container /> -->
+      </div>
+    </header>
+  </main>
+</template>
   
-  <script setup lang="ts">
-  import type { BreadcrumbLink } from '#ui/types'
-  
-  export interface Props {
-    links: BreadcrumbLink[]
-  }
-  
-  defineProps<Props>()
-  </script>
